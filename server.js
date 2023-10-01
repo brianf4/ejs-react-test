@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 // Serve static files from the 'dist' directory
-app.use('/React-vite', express.static('React-vite/dist'));
+app.use(express.static('react-vite/dist'));
 
 
 app.use('/', homeRoutes)
