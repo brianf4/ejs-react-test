@@ -13,8 +13,6 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-// Serve static files from the 'dist' directory
-app.use(express.static('react-vite/dist'));
 
 
 app.use('/', homeRoutes)
